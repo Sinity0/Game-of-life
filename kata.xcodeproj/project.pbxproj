@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8957A15D28D10F9B00384BA1 /* World+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A15C28D10F9B00384BA1 /* World+Cells.swift */; };
+		8957A15E28D10F9B00384BA1 /* World+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A15C28D10F9B00384BA1 /* World+Cells.swift */; };
+		8957A16128D11F4B00384BA1 /* Array+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16028D11F4B00384BA1 /* Array+Action.swift */; };
+		8957A16228D11F4B00384BA1 /* Array+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16028D11F4B00384BA1 /* Array+Action.swift */; };
+		8957A16628D1319F00384BA1 /* Cell+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16528D1319F00384BA1 /* Cell+Protocols.swift */; };
+		8957A16728D1319F00384BA1 /* Cell+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16528D1319F00384BA1 /* Cell+Protocols.swift */; };
+		898FC0E928CFBA160031F850 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0E828CFBA160031F850 /* Tests_iOS.swift */; };
+		898FC0EB28CFBA160031F850 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */; };
+		898FC0F528CFBA160031F850 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0F428CFBA160031F850 /* Tests_macOS.swift */; };
+		898FC0F728CFBA160031F850 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */; };
+		898FC0F828CFBA160031F850 /* kataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D028CFBA140031F850 /* kataApp.swift */; };
+		898FC0F928CFBA160031F850 /* kataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D028CFBA140031F850 /* kataApp.swift */; };
+		898FC0FA28CFBA160031F850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D128CFBA140031F850 /* ContentView.swift */; };
+		898FC0FB28CFBA160031F850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D128CFBA140031F850 /* ContentView.swift */; };
+		898FC0FC28CFBA160031F850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FC0D228CFBA160031F850 /* Assets.xcassets */; };
+		898FC0FD28CFBA160031F850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FC0D228CFBA160031F850 /* Assets.xcassets */; };
+		898FC11328CFBDB00031F850 /* kataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11228CFBDB00031F850 /* kataTests.swift */; };
+		898FC11A28CFC6900031F850 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11928CFC6900031F850 /* Cell.swift */; };
+		898FC11B28CFC6900031F850 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11928CFC6900031F850 /* Cell.swift */; };
+		898FC11D28CFC8CA0031F850 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11C28CFC8CA0031F850 /* World.swift */; };
+		898FC11E28CFC8CA0031F850 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11C28CFC8CA0031F850 /* World.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		898FC0E528CFBA160031F850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 898FC0D628CFBA160031F850;
+			remoteInfo = "kata (iOS)";
+		};
+		898FC0F128CFBA160031F850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 898FC0DC28CFBA160031F850;
+			remoteInfo = "kata (macOS)";
+		};
+		898FC11428CFBDB00031F850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 898FC0D628CFBA160031F850;
+			remoteInfo = "kata (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8957A15C28D10F9B00384BA1 /* World+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "World+Cells.swift"; sourceTree = "<group>"; };
+		8957A16028D11F4B00384BA1 /* Array+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Action.swift"; sourceTree = "<group>"; };
+		8957A16528D1319F00384BA1 /* Cell+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Protocols.swift"; sourceTree = "<group>"; };
+		898FC0D028CFBA140031F850 /* kataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataApp.swift; sourceTree = "<group>"; };
+		898FC0D128CFBA140031F850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		898FC0D228CFBA160031F850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		898FC0D728CFBA160031F850 /* kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		898FC0DD28CFBA160031F850 /* kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		898FC0DF28CFBA160031F850 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		898FC0E428CFBA160031F850 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		898FC0E828CFBA160031F850 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		898FC0F028CFBA160031F850 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		898FC0F428CFBA160031F850 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		898FC11028CFBDB00031F850 /* kataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		898FC11228CFBDB00031F850 /* kataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataTests.swift; sourceTree = "<group>"; };
+		898FC11928CFC6900031F850 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		898FC11C28CFC8CA0031F850 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		898FC0D428CFBA160031F850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0DA28CFBA160031F850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0E128CFBA160031F850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0ED28CFBA160031F850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC10D28CFBDB00031F850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8957A15F28D11F2E00384BA1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8957A16028D11F4B00384BA1 /* Array+Action.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8957A16328D1316F00384BA1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8957A16428D1318800384BA1 /* Cell */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8957A16428D1318800384BA1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8957A16528D1319F00384BA1 /* Cell+Protocols.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		898FC0CA28CFBA140031F850 = {
+			isa = PBXGroup;
+			children = (
+				898FC0CF28CFBA140031F850 /* Shared */,
+				898FC0DE28CFBA160031F850 /* macOS */,
+				898FC0E728CFBA160031F850 /* Tests iOS */,
+				898FC0F328CFBA160031F850 /* Tests macOS */,
+				898FC11128CFBDB00031F850 /* kataTests */,
+				898FC0D828CFBA160031F850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		898FC0CF28CFBA140031F850 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8957A16328D1316F00384BA1 /* Protocols */,
+				8957A15F28D11F2E00384BA1 /* Extensions */,
+				898FC0D028CFBA140031F850 /* kataApp.swift */,
+				898FC11928CFC6900031F850 /* Cell.swift */,
+				898FC11C28CFC8CA0031F850 /* World.swift */,
+				8957A15C28D10F9B00384BA1 /* World+Cells.swift */,
+				898FC0D128CFBA140031F850 /* ContentView.swift */,
+				898FC0D228CFBA160031F850 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		898FC0D828CFBA160031F850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				898FC0D728CFBA160031F850 /* kata.app */,
+				898FC0DD28CFBA160031F850 /* kata.app */,
+				898FC0E428CFBA160031F850 /* Tests iOS.xctest */,
+				898FC0F028CFBA160031F850 /* Tests macOS.xctest */,
+				898FC11028CFBDB00031F850 /* kataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		898FC0DE28CFBA160031F850 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				898FC0DF28CFBA160031F850 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		898FC0E728CFBA160031F850 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				898FC0E828CFBA160031F850 /* Tests_iOS.swift */,
+				898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		898FC0F328CFBA160031F850 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				898FC0F428CFBA160031F850 /* Tests_macOS.swift */,
+				898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		898FC11128CFBDB00031F850 /* kataTests */ = {
+			isa = PBXGroup;
+			children = (
+				898FC11228CFBDB00031F850 /* kataTests.swift */,
+			);
+			path = kataTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		898FC0D628CFBA160031F850 /* kata (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898FC10028CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (iOS)" */;
+			buildPhases = (
+				898FC0D328CFBA160031F850 /* Sources */,
+				898FC0D428CFBA160031F850 /* Frameworks */,
+				898FC0D528CFBA160031F850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kata (iOS)";
+			productName = "kata (iOS)";
+			productReference = 898FC0D728CFBA160031F850 /* kata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		898FC0DC28CFBA160031F850 /* kata (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898FC10328CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (macOS)" */;
+			buildPhases = (
+				898FC0D928CFBA160031F850 /* Sources */,
+				898FC0DA28CFBA160031F850 /* Frameworks */,
+				898FC0DB28CFBA160031F850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kata (macOS)";
+			productName = "kata (macOS)";
+			productReference = 898FC0DD28CFBA160031F850 /* kata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		898FC0E328CFBA160031F850 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898FC10628CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				898FC0E028CFBA160031F850 /* Sources */,
+				898FC0E128CFBA160031F850 /* Frameworks */,
+				898FC0E228CFBA160031F850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				898FC0E628CFBA160031F850 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 898FC0E428CFBA160031F850 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		898FC0EF28CFBA160031F850 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898FC10928CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				898FC0EC28CFBA160031F850 /* Sources */,
+				898FC0ED28CFBA160031F850 /* Frameworks */,
+				898FC0EE28CFBA160031F850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				898FC0F228CFBA160031F850 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 898FC0F028CFBA160031F850 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		898FC10F28CFBDB00031F850 /* kataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898FC11628CFBDB00031F850 /* Build configuration list for PBXNativeTarget "kataTests" */;
+			buildPhases = (
+				898FC10C28CFBDB00031F850 /* Sources */,
+				898FC10D28CFBDB00031F850 /* Frameworks */,
+				898FC10E28CFBDB00031F850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				898FC11528CFBDB00031F850 /* PBXTargetDependency */,
+			);
+			name = kataTests;
+			productName = kataTests;
+			productReference = 898FC11028CFBDB00031F850 /* kataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		898FC0CB28CFBA140031F850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					898FC0D628CFBA160031F850 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					898FC0DC28CFBA160031F850 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					898FC0E328CFBA160031F850 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 898FC0D628CFBA160031F850;
+					};
+					898FC0EF28CFBA160031F850 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 898FC0DC28CFBA160031F850;
+					};
+					898FC10F28CFBDB00031F850 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 898FC0D628CFBA160031F850;
+					};
+				};
+			};
+			buildConfigurationList = 898FC0CE28CFBA140031F850 /* Build configuration list for PBXProject "kata" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 898FC0CA28CFBA140031F850;
+			productRefGroup = 898FC0D828CFBA160031F850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				898FC0D628CFBA160031F850 /* kata (iOS) */,
+				898FC0DC28CFBA160031F850 /* kata (macOS) */,
+				898FC0E328CFBA160031F850 /* Tests iOS */,
+				898FC0EF28CFBA160031F850 /* Tests macOS */,
+				898FC10F28CFBDB00031F850 /* kataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		898FC0D528CFBA160031F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898FC0FC28CFBA160031F850 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0DB28CFBA160031F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898FC0FD28CFBA160031F850 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0E228CFBA160031F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0EE28CFBA160031F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC10E28CFBDB00031F850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		898FC0D328CFBA160031F850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8957A16628D1319F00384BA1 /* Cell+Protocols.swift in Sources */,
+				898FC0FA28CFBA160031F850 /* ContentView.swift in Sources */,
+				898FC0F828CFBA160031F850 /* kataApp.swift in Sources */,
+				898FC11D28CFC8CA0031F850 /* World.swift in Sources */,
+				898FC11A28CFC6900031F850 /* Cell.swift in Sources */,
+				8957A15D28D10F9B00384BA1 /* World+Cells.swift in Sources */,
+				8957A16128D11F4B00384BA1 /* Array+Action.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0D928CFBA160031F850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8957A16728D1319F00384BA1 /* Cell+Protocols.swift in Sources */,
+				898FC0FB28CFBA160031F850 /* ContentView.swift in Sources */,
+				898FC0F928CFBA160031F850 /* kataApp.swift in Sources */,
+				898FC11E28CFC8CA0031F850 /* World.swift in Sources */,
+				898FC11B28CFC6900031F850 /* Cell.swift in Sources */,
+				8957A15E28D10F9B00384BA1 /* World+Cells.swift in Sources */,
+				8957A16228D11F4B00384BA1 /* Array+Action.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0E028CFBA160031F850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898FC0EB28CFBA160031F850 /* Tests_iOSLaunchTests.swift in Sources */,
+				898FC0E928CFBA160031F850 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC0EC28CFBA160031F850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898FC0F728CFBA160031F850 /* Tests_macOSLaunchTests.swift in Sources */,
+				898FC0F528CFBA160031F850 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FC10C28CFBDB00031F850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898FC11328CFBDB00031F850 /* kataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		898FC0E628CFBA160031F850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 898FC0D628CFBA160031F850 /* kata (iOS) */;
+			targetProxy = 898FC0E528CFBA160031F850 /* PBXContainerItemProxy */;
+		};
+		898FC0F228CFBA160031F850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 898FC0DC28CFBA160031F850 /* kata (macOS) */;
+			targetProxy = 898FC0F128CFBA160031F850 /* PBXContainerItemProxy */;
+		};
+		898FC11528CFBDB00031F850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 898FC0D628CFBA160031F850 /* kata (iOS) */;
+			targetProxy = 898FC11428CFBDB00031F850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		898FC0FE28CFBA160031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		898FC0FF28CFBA160031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		898FC10128CFBA160031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
+				PRODUCT_NAME = kata;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		898FC10228CFBA160031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
+				PRODUCT_NAME = kata;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		898FC10428CFBA160031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
+				PRODUCT_NAME = kata;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		898FC10528CFBA160031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
+				PRODUCT_NAME = kata;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		898FC10728CFBA160031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kata (iOS)";
+			};
+			name = Debug;
+		};
+		898FC10828CFBA160031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kata (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		898FC10A28CFBA160031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "kata (macOS)";
+			};
+			name = Debug;
+		};
+		898FC10B28CFBA160031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "kata (macOS)";
+			};
+			name = Release;
+		};
+		898FC11728CFBDB00031F850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata.app/kata";
+			};
+			name = Debug;
+		};
+		898FC11828CFBDB00031F850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXT7HT56A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = if.kataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata.app/kata";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		898FC0CE28CFBA140031F850 /* Build configuration list for PBXProject "kata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC0FE28CFBA160031F850 /* Debug */,
+				898FC0FF28CFBA160031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		898FC10028CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC10128CFBA160031F850 /* Debug */,
+				898FC10228CFBA160031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		898FC10328CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC10428CFBA160031F850 /* Debug */,
+				898FC10528CFBA160031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		898FC10628CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC10728CFBA160031F850 /* Debug */,
+				898FC10828CFBA160031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		898FC10928CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC10A28CFBA160031F850 /* Debug */,
+				898FC10B28CFBA160031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		898FC11628CFBDB00031F850 /* Build configuration list for PBXNativeTarget "kataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898FC11728CFBDB00031F850 /* Debug */,
+				898FC11828CFBDB00031F850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 898FC0CB28CFBA140031F850 /* Project object */;
+}
