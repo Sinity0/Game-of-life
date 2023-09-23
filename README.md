@@ -21,4 +21,11 @@ At each step in time, the following transitions occur:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Sinity0/Game-of-life.git
+```
+
+## Contribution
+Feel free to fork the repository and submit pull requests. Make sure to write tests for any new features or logic.
+
+## License
+MIT License
