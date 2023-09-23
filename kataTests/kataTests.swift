@@ -11,20 +11,20 @@ import XCTest
 class kataTests: XCTestCase {
     
     func testWorldCreation() {
-        let world = World(dimensions: 10)
+        let world = WorldViewModel(dimensions: 10)
         XCTAssertTrue(world.cells.count == 100)
         XCTAssertTrue(world.dimensions == 10)
     }
     
     func testSubscript() {
-        let world = World(dimensions: 10,isEmpty: true)
+        let world = WorldViewModel(dimensions: 10,isEmpty: true)
         XCTAssertTrue(world[4,5] != nil)
         XCTAssertTrue(world[4,5]?.isAlive == false)
         XCTAssertTrue(world[4,5]?.position == Position(x: 4, y: 5))
     }
     
     func testAliveCells() {
-        let world = World(dimensions: 10, isEmpty: true)
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[2,1]?.isAlive = true
         world[2,2]?.isAlive = true
         
@@ -33,7 +33,7 @@ class kataTests: XCTestCase {
     }
     
     func testLivingNeighboursSearch() {
-        let world = World(dimensions: 10, isEmpty: true)
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[0,1]?.isAlive = true
         world[1,0]?.isAlive = true
         
@@ -44,7 +44,7 @@ class kataTests: XCTestCase {
     }
     
     func testDyingCells() {
-        let world = World(dimensions: 10, isEmpty: true)
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[0,1]?.isAlive = true
         world[1,0]?.isAlive = true
         
@@ -56,7 +56,7 @@ class kataTests: XCTestCase {
     }
     
     func testRevivingCells() {
-        let world = World(dimensions: 10, isEmpty: true)
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[4,4]?.isAlive = true
         world[4,5]?.isAlive = true
         world[5,4]?.isAlive = true
@@ -66,7 +66,7 @@ class kataTests: XCTestCase {
     }
     
     func testPerfomanceUnoptimised() {
-        let world = World(dimensions: 100)
+        let world = WorldViewModel(dimensions: 100)
         measure {
             for _ in 0...2 {
                 world.tick()

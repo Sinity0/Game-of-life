@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension World {
+extension WorldModel {
     func aliveNeighbourCountAt(_ position: Position) -> Int {
         let neighbours: Set = [self[position.x - 1, position.y - 1],
                   self[position.x - 1, position.y],

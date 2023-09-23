@@ -7,21 +7,17 @@
 
 import Foundation
 
-class World: ObservableObject {
-    @Published private(set) var cells: [Position: Cell]
-    @Published private(set) var dimensions: Int
+class WorldModel {
+    var cells: [Position: Cell]
+    var dimensions: Int
     
     var aliveCells: [Cell] {
-        let c = cells.filter { $0.value.isAlive }
-        return c.map { $0.value }
+        cells.filter { $0.value.isAlive }.map { $0.value }
     }
     
     var deadCells: [Cell] {
-        let c = cells.filter { !$0.value.isAlive }
-        return c.map { $0.value }
+        cells.filter { !$0.value.isAlive }.map { $0.value }
     }
-    
-    lazy var _memoNeighbours: [Cell: [Cell]] = [:]
 
     init(dimensions: Int, isEmpty: Bool = false) {
         cells = [:]
@@ -39,9 +35,12 @@ class World: ObservableObject {
         }
     }
     
-    @objc func tick() {
-        _ = cells.map { $0.value.isAlive = state(at: $0.value.position)}
-        objectWillChange.send()
+    func tick() {
+        for position in cells.keys {
+            if let cell = cells[position] {
+                cell.isAlive = state(at: position)
+            }
+        }
     }
 
     subscript(x: Int, y: Int) -> Cell? {
