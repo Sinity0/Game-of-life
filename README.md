@@ -1,5 +1,10 @@
-# Game of life
-The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+Game of Life (Kata)
+An implementation of Conway's Game of Life in Swift using SwiftUI.
+
+Description
+Conway's Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It's a zero-player game, meaning that its progression is determined by its initial state, without any further input from humans.
+
+This project uses SwiftUI for rendering and follows the MVVM design pattern.
 
 <img src="https://github.com/Sinity0/Game-of-life/assets/8318379/fc1afca7-f9ed-4298-a99c-d0b381769954" width="250" height="250"/>
 
