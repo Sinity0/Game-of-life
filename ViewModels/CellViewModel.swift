@@ -18,7 +18,12 @@ class CellViewModel: ObservableObject {
     }
     
     var isAlive: Bool {
-        cell.isAlive
+        get {
+            cell.isAlive
+        }
+        set {
+            cell.state = newValue ? .alive : .dead
+        }
     }
     
     var color: Color {

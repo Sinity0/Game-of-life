@@ -11,7 +11,11 @@ class WorldViewModel: ObservableObject {
     @Published private(set) var world: WorldModel
     
     var dimensions: Int {
-        return world.dimensions
+        world.dimensions
+    }
+    
+    var cells: [Position: Cell] {
+        world.cells
     }
 
     lazy var _memoNeighbours: [Cell: [Cell]] = [:]

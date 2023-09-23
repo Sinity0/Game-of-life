@@ -10,10 +10,25 @@ import XCTest
 
 class kataTests: XCTestCase {
     
-    func testWorldCreation() {
+    func testWorldDefaultCreation() {
         let world = WorldViewModel(dimensions: 10)
         XCTAssertTrue(world.cells.count == 100)
         XCTAssertTrue(world.dimensions == 10)
+        XCTAssertNotNil(world[4,5])
+    }
+
+    func testWorldCreationWithIsEmptyFlag() {
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
+        XCTAssertTrue(world.cells.count == 100)
+        XCTAssertTrue(world.dimensions == 10)
+        XCTAssertTrue(world[4,5]?.isAlive == false)
+        XCTAssertTrue(world[4,5]?.position == Position(x: 4, y: 5))
+    }
+    
+    func testWorldBoundaries() {
+        let world = WorldViewModel(dimensions: 10)
+        XCTAssertNil(world[10,10])  // Outside the boundary
+        XCTAssertNotNil(world[9,9]) // Edge of the world
     }
     
     func testSubscript() {
@@ -23,13 +38,20 @@ class kataTests: XCTestCase {
         XCTAssertTrue(world[4,5]?.position == Position(x: 4, y: 5))
     }
     
+    func testUpdateCellState() {
+        let world = WorldViewModel(dimensions: 10, isEmpty: true)
+        XCTAssertFalse(world[4,5]?.isAlive ?? true) // should be dead
+        world[4,5]?.isAlive = true
+        XCTAssertTrue(world[4,5]?.isAlive ?? false) // should be alive now
+    }
+    
     func testAliveCells() {
         let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[2,1]?.isAlive = true
         world[2,2]?.isAlive = true
         
-        XCTAssertTrue(world.aliveCells.count == 2)
-        XCTAssertTrue(world.deadCells.count == 98)
+        XCTAssertTrue(world.world.aliveCells.count == 2)
+        XCTAssertTrue(world.world.deadCells.count == 98)
     }
     
     func testLivingNeighboursSearch() {
@@ -37,35 +59,24 @@ class kataTests: XCTestCase {
         world[0,1]?.isAlive = true
         world[1,0]?.isAlive = true
         
-        XCTAssertTrue(world.aliveNeighbourCountAt(Position(x: 0, y: 0)) == 2)
-        XCTAssertTrue(world.aliveNeighbourCountAt(Position(x: 1, y: 1)) == 2)
-        XCTAssertTrue(world.aliveNeighbourCountAt(Position(x: 0, y: 1)) == 1)
-        XCTAssertTrue(world.aliveNeighbourCountAt(Position(x: 2, y: 2)) == 0)
+        XCTAssertTrue(world.world.aliveNeighbourCountAt(Position(x: 0, y: 0)) == 2)
+        XCTAssertTrue(world.world.aliveNeighbourCountAt(Position(x: 1, y: 1)) == 2)
+        XCTAssertTrue(world.world.aliveNeighbourCountAt(Position(x: 0, y: 1)) == 1)
+        XCTAssertTrue(world.world.aliveNeighbourCountAt(Position(x: 2, y: 2)) == 0)
     }
     
-    func testDyingCells() {
+    func testCellTransitions() {
         let world = WorldViewModel(dimensions: 10, isEmpty: true)
         world[0,1]?.isAlive = true
         world[1,0]?.isAlive = true
-        
         world[4,4]?.isAlive = true
         world[4,5]?.isAlive = true
         world[5,4]?.isAlive = true
-        
-        XCTAssertTrue(world.dyingCells().count == 2)
+        XCTAssertTrue(world.world.dyingCells().count == 2)
+        XCTAssertTrue(world.world.revivingCells().count == 1)
     }
     
-    func testRevivingCells() {
-        let world = WorldViewModel(dimensions: 10, isEmpty: true)
-        world[4,4]?.isAlive = true
-        world[4,5]?.isAlive = true
-        world[5,4]?.isAlive = true
-        world[4,3]?.isAlive = true
-        
-        XCTAssertTrue(world.revivingCells().count == 3)
-    }
-    
-    func testPerfomanceUnoptimised() {
+    func testPerfomance() {
         let world = WorldViewModel(dimensions: 100)
         measure {
             for _ in 0...2 {
