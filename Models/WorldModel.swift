@@ -5,7 +5,7 @@
 //  Created by Evgeny Mikhalkov on 2022-09-12.
 //
 
-import Foundation
+import UIKit
 
 class WorldModel {
     var cells: [Position: Cell]
@@ -18,6 +18,9 @@ class WorldModel {
     var deadCells: [Cell] {
         cells.filter { !$0.value.isAlive }.map { $0.value }
     }
+    
+    var neighbourCountCache: [Position: Int] = [:]
+    var cellStateCache: [Position: Bool] = [:]
 
     init(dimensions: Int, isEmpty: Bool = false) {
         cells = [:]
@@ -29,17 +32,29 @@ class WorldModel {
                 cells[position] =
                     Cell(
                         position: position,
-                        state: isEmpty ? .dead : Int.random(in: 1...10) == 1 ? .alive : .dead
+                        //state: isEmpty ? .dead : Int.random(in: 1...10) == 1 ? .alive : .dead
+                        state: .dead
                     )
             }
         }
+        
+        // Glider pattern
+        cells[Position(x: 1, y: 0)]?.isAlive = true
+        cells[Position(x: 2, y: 1)]?.isAlive = true
+        cells[Position(x: 0, y: 2)]?.isAlive = true
+        cells[Position(x: 1, y: 2)]?.isAlive = true
+        cells[Position(x: 2, y: 2)]?.isAlive = true
     }
     
     func tick() {
+        neighbourCountCache.removeAll()
+        cellStateCache.removeAll()
+        var nextStates: [Position: Bool] = [:]
         for position in cells.keys {
-            if let cell = cells[position] {
-                cell.isAlive = state(at: position)
-            }
+            nextStates[position] = state(at: position)
+        }
+        for (position, isAlive) in nextStates {
+            cells[position]?.isAlive = isAlive
         }
     }
 

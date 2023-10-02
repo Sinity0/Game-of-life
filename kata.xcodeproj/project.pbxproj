@@ -9,22 +9,14 @@
 /* Begin PBXBuildFile section */
 		8957A15D28D10F9B00384BA1 /* World+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A15C28D10F9B00384BA1 /* World+Cells.swift */; };
 		8957A16128D11F4B00384BA1 /* Array+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16028D11F4B00384BA1 /* Array+Action.swift */; };
-		8957A16228D11F4B00384BA1 /* Array+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16028D11F4B00384BA1 /* Array+Action.swift */; };
 		8957A16628D1319F00384BA1 /* Cell+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16528D1319F00384BA1 /* Cell+Protocols.swift */; };
-		8957A16728D1319F00384BA1 /* Cell+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957A16528D1319F00384BA1 /* Cell+Protocols.swift */; };
-		898FC0E928CFBA160031F850 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0E828CFBA160031F850 /* Tests_iOS.swift */; };
-		898FC0EB28CFBA160031F850 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */; };
-		898FC0F528CFBA160031F850 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0F428CFBA160031F850 /* Tests_macOS.swift */; };
-		898FC0F728CFBA160031F850 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */; };
 		898FC0F828CFBA160031F850 /* kataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D028CFBA140031F850 /* kataApp.swift */; };
-		898FC0F928CFBA160031F850 /* kataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D028CFBA140031F850 /* kataApp.swift */; };
 		898FC0FA28CFBA160031F850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D128CFBA140031F850 /* ContentView.swift */; };
-		898FC0FB28CFBA160031F850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC0D128CFBA140031F850 /* ContentView.swift */; };
 		898FC0FC28CFBA160031F850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FC0D228CFBA160031F850 /* Assets.xcassets */; };
-		898FC0FD28CFBA160031F850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FC0D228CFBA160031F850 /* Assets.xcassets */; };
 		898FC11328CFBDB00031F850 /* kataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11228CFBDB00031F850 /* kataTests.swift */; };
 		898FC11A28CFC6900031F850 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11928CFC6900031F850 /* Cell.swift */; };
 		898FC11D28CFC8CA0031F850 /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11C28CFC8CA0031F850 /* WorldModel.swift */; };
+		89AC81C22AC74C8C00857978 /* Glider in Frameworks */ = {isa = PBXBuildFile; productRef = 89AC81C12AC74C8C00857978 /* Glider */; };
 		89F2ED092ABF0EFD003F6BD5 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED082ABF0EFD003F6BD5 /* CellState.swift */; };
 		89F2ED0D2ABF1381003F6BD5 /* LayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED0C2ABF1381003F6BD5 /* LayerCell.swift */; };
 		89F2ED0F2ABF2208003F6BD5 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED0E2ABF2208003F6BD5 /* Position.swift */; };
@@ -35,20 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		898FC0E528CFBA160031F850 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 898FC0D628CFBA160031F850;
-			remoteInfo = "kata (iOS)";
-		};
-		898FC0F128CFBA160031F850 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 898FC0DC28CFBA160031F850;
-			remoteInfo = "kata (macOS)";
-		};
 		898FC11428CFBDB00031F850 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 898FC0CB28CFBA140031F850 /* Project object */;
@@ -66,14 +44,6 @@
 		898FC0D128CFBA140031F850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		898FC0D228CFBA160031F850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898FC0D728CFBA160031F850 /* kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kata.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		898FC0DD28CFBA160031F850 /* kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kata.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		898FC0DF28CFBA160031F850 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		898FC0E428CFBA160031F850 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		898FC0E828CFBA160031F850 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		898FC0F028CFBA160031F850 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		898FC0F428CFBA160031F850 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		898FC11028CFBDB00031F850 /* kataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		898FC11228CFBDB00031F850 /* kataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataTests.swift; sourceTree = "<group>"; };
 		898FC11928CFC6900031F850 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -92,27 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0DA28CFBA160031F850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0E128CFBA160031F850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0ED28CFBA160031F850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				89AC81C22AC74C8C00857978 /* Glider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +110,6 @@
 				89F2ED052ABF0E6D003F6BD5 /* Models */,
 				89F2ED062ABF0E79003F6BD5 /* Views */,
 				89F2ED072ABF0E95003F6BD5 /* ViewModels */,
-				898FC0DE28CFBA160031F850 /* macOS */,
-				898FC0E728CFBA160031F850 /* Tests iOS */,
-				898FC0F328CFBA160031F850 /* Tests macOS */,
 				898FC11128CFBDB00031F850 /* kataTests */,
 				898FC0D828CFBA160031F850 /* Products */,
 			);
@@ -180,38 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				898FC0D728CFBA160031F850 /* kata.app */,
-				898FC0DD28CFBA160031F850 /* kata.app */,
-				898FC0E428CFBA160031F850 /* Tests iOS.xctest */,
-				898FC0F028CFBA160031F850 /* Tests macOS.xctest */,
 				898FC11028CFBDB00031F850 /* kataTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		898FC0DE28CFBA160031F850 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				898FC0DF28CFBA160031F850 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		898FC0E728CFBA160031F850 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				898FC0E828CFBA160031F850 /* Tests_iOS.swift */,
-				898FC0EA28CFBA160031F850 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		898FC0F328CFBA160031F850 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				898FC0F428CFBA160031F850 /* Tests_macOS.swift */,
-				898FC0F628CFBA160031F850 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		898FC11128CFBDB00031F850 /* kataTests */ = {
@@ -270,62 +188,12 @@
 			dependencies = (
 			);
 			name = "kata (iOS)";
+			packageProductDependencies = (
+				89AC81C12AC74C8C00857978 /* Glider */,
+			);
 			productName = "kata (iOS)";
 			productReference = 898FC0D728CFBA160031F850 /* kata.app */;
 			productType = "com.apple.product-type.application";
-		};
-		898FC0DC28CFBA160031F850 /* kata (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 898FC10328CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (macOS)" */;
-			buildPhases = (
-				898FC0D928CFBA160031F850 /* Sources */,
-				898FC0DA28CFBA160031F850 /* Frameworks */,
-				898FC0DB28CFBA160031F850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "kata (macOS)";
-			productName = "kata (macOS)";
-			productReference = 898FC0DD28CFBA160031F850 /* kata.app */;
-			productType = "com.apple.product-type.application";
-		};
-		898FC0E328CFBA160031F850 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 898FC10628CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				898FC0E028CFBA160031F850 /* Sources */,
-				898FC0E128CFBA160031F850 /* Frameworks */,
-				898FC0E228CFBA160031F850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				898FC0E628CFBA160031F850 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 898FC0E428CFBA160031F850 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		898FC0EF28CFBA160031F850 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 898FC10928CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				898FC0EC28CFBA160031F850 /* Sources */,
-				898FC0ED28CFBA160031F850 /* Frameworks */,
-				898FC0EE28CFBA160031F850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				898FC0F228CFBA160031F850 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 898FC0F028CFBA160031F850 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		898FC10F28CFBDB00031F850 /* kataTests */ = {
 			isa = PBXNativeTarget;
@@ -358,17 +226,6 @@
 					898FC0D628CFBA160031F850 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					898FC0DC28CFBA160031F850 = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
-					898FC0E328CFBA160031F850 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 898FC0D628CFBA160031F850;
-					};
-					898FC0EF28CFBA160031F850 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 898FC0DC28CFBA160031F850;
-					};
 					898FC10F28CFBDB00031F850 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 898FC0D628CFBA160031F850;
@@ -384,14 +241,14 @@
 				Base,
 			);
 			mainGroup = 898FC0CA28CFBA140031F850;
+			packageReferences = (
+				89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */,
+			);
 			productRefGroup = 898FC0D828CFBA160031F850 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				898FC0D628CFBA160031F850 /* kata (iOS) */,
-				898FC0DC28CFBA160031F850 /* kata (macOS) */,
-				898FC0E328CFBA160031F850 /* Tests iOS */,
-				898FC0EF28CFBA160031F850 /* Tests macOS */,
 				898FC10F28CFBDB00031F850 /* kataTests */,
 			);
 		};
@@ -403,28 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				898FC0FC28CFBA160031F850 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0DB28CFBA160031F850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				898FC0FD28CFBA160031F850 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0E228CFBA160031F850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0EE28CFBA160031F850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,35 +294,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		898FC0D928CFBA160031F850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8957A16728D1319F00384BA1 /* Cell+Protocols.swift in Sources */,
-				898FC0FB28CFBA160031F850 /* ContentView.swift in Sources */,
-				898FC0F928CFBA160031F850 /* kataApp.swift in Sources */,
-				8957A16228D11F4B00384BA1 /* Array+Action.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0E028CFBA160031F850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				898FC0EB28CFBA160031F850 /* Tests_iOSLaunchTests.swift in Sources */,
-				898FC0E928CFBA160031F850 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		898FC0EC28CFBA160031F850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				898FC0F728CFBA160031F850 /* Tests_macOSLaunchTests.swift in Sources */,
-				898FC0F528CFBA160031F850 /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		898FC10C28CFBDB00031F850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,16 +305,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		898FC0E628CFBA160031F850 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 898FC0D628CFBA160031F850 /* kata (iOS) */;
-			targetProxy = 898FC0E528CFBA160031F850 /* PBXContainerItemProxy */;
-		};
-		898FC0F228CFBA160031F850 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 898FC0DC28CFBA160031F850 /* kata (macOS) */;
-			targetProxy = 898FC0F128CFBA160031F850 /* PBXContainerItemProxy */;
-		};
 		898FC11528CFBDB00031F850 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 898FC0D628CFBA160031F850 /* kata (iOS) */;
@@ -650,6 +446,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
 				PRODUCT_NAME = kata;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,145 +479,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
 				PRODUCT_NAME = kata;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		898FC10428CFBA160031F850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
-				PRODUCT_NAME = kata;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		898FC10528CFBA160031F850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = if.kata;
-				PRODUCT_NAME = kata;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		898FC10728CFBA160031F850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "kata (iOS)";
-			};
-			name = Debug;
-		};
-		898FC10828CFBA160031F850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "kata (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		898FC10A28CFBA160031F850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "kata (macOS)";
-			};
-			name = Debug;
-		};
-		898FC10B28CFBA160031F850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AXT7HT56A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "if.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "kata (macOS)";
 			};
 			name = Release;
 		};
@@ -884,33 +551,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		898FC10328CFBA160031F850 /* Build configuration list for PBXNativeTarget "kata (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				898FC10428CFBA160031F850 /* Debug */,
-				898FC10528CFBA160031F850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		898FC10628CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				898FC10728CFBA160031F850 /* Debug */,
-				898FC10828CFBA160031F850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		898FC10928CFBA160031F850 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				898FC10A28CFBA160031F850 /* Debug */,
-				898FC10B28CFBA160031F850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		898FC11628CFBDB00031F850 /* Build configuration list for PBXNativeTarget "kataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -921,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/immobiliare/Glider.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89AC81C12AC74C8C00857978 /* Glider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */;
+			productName = Glider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 898FC0CB28CFBA140031F850 /* Project object */;
 }
