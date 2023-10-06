@@ -16,7 +16,6 @@
 		898FC11328CFBDB00031F850 /* kataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11228CFBDB00031F850 /* kataTests.swift */; };
 		898FC11A28CFC6900031F850 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11928CFC6900031F850 /* Cell.swift */; };
 		898FC11D28CFC8CA0031F850 /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC11C28CFC8CA0031F850 /* WorldModel.swift */; };
-		89AC81C22AC74C8C00857978 /* Glider in Frameworks */ = {isa = PBXBuildFile; productRef = 89AC81C12AC74C8C00857978 /* Glider */; };
 		89F2ED092ABF0EFD003F6BD5 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED082ABF0EFD003F6BD5 /* CellState.swift */; };
 		89F2ED0D2ABF1381003F6BD5 /* LayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED0C2ABF1381003F6BD5 /* LayerCell.swift */; };
 		89F2ED0F2ABF2208003F6BD5 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2ED0E2ABF2208003F6BD5 /* Position.swift */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AC81C22AC74C8C00857978 /* Glider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +187,6 @@
 			);
 			name = "kata (iOS)";
 			packageProductDependencies = (
-				89AC81C12AC74C8C00857978 /* Glider */,
 			);
 			productName = "kata (iOS)";
 			productReference = 898FC0D728CFBA160031F850 /* kata.app */;
@@ -242,7 +239,6 @@
 			);
 			mainGroup = 898FC0CA28CFBA140031F850;
 			packageReferences = (
-				89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */,
 			);
 			productRefGroup = 898FC0D828CFBA160031F850 /* Products */;
 			projectDirPath = "";
@@ -561,25 +557,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/immobiliare/Glider.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		89AC81C12AC74C8C00857978 /* Glider */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 89AC81C02AC74C8C00857978 /* XCRemoteSwiftPackageReference "Glider" */;
-			productName = Glider;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 898FC0CB28CFBA140031F850 /* Project object */;
 }
