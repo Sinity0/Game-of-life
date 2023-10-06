@@ -29,16 +29,7 @@ extension WorldModel {
     func revivingCells() -> [Cell] {
         var candidates: Set<Position> = []
         for aliveCell in aliveCells {
-            let neighboursPositions: Set<Position> = [
-                Position(x: aliveCell.position.x - 1, y: aliveCell.position.y - 1),
-                Position(x: aliveCell.position.x - 1, y: aliveCell.position.y),
-                Position(x: aliveCell.position.x - 1, y: aliveCell.position.y + 1),
-                Position(x: aliveCell.position.x, y: aliveCell.position.y - 1),
-                Position(x: aliveCell.position.x, y: aliveCell.position.y + 1),
-                Position(x: aliveCell.position.x + 1, y: aliveCell.position.y - 1),
-                Position(x: aliveCell.position.x + 1, y: aliveCell.position.y),
-                Position(x: aliveCell.position.x + 1, y: aliveCell.position.y + 1)
-            ]
+            let neighboursPositions = getNeighbourPositions(of: aliveCell.position)
             for neighbourPosition in neighboursPositions {
                 if let cell = cells[neighbourPosition], !cell.isAlive {
                     candidates.insert(neighbourPosition)
@@ -47,6 +38,20 @@ extension WorldModel {
         }
 
         return candidates.filter { aliveNeighbourCountAt($0) == 3 }.compactMap { cells[$0] }
+    }
+    
+    func getNeighbourPositions(of position: Position) -> Set<Position> {
+        let neighbours: Set<Position> = [
+            Position(x: position.x - 1, y: position.y - 1),
+            Position(x: position.x - 1, y: position.y),
+            Position(x: position.x - 1, y: position.y + 1),
+            Position(x: position.x, y: position.y - 1),
+            Position(x: position.x, y: position.y + 1),
+            Position(x: position.x + 1, y: position.y - 1),
+            Position(x: position.x + 1, y: position.y),
+            Position(x: position.x + 1, y: position.y + 1)
+        ]
+        return neighbours
     }
     
     func dyingCells() -> [Cell] {
