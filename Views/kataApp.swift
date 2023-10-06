@@ -11,7 +11,7 @@ import SwiftUI
 struct kataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(WorldViewModel(dimensions: 500))
+            ContentView().environmentObject(WorldViewModel(dimensions: 100))
         }
     }
 }

@@ -56,14 +56,6 @@ class WorldModel {
     func tick() {
         neighbourCountCache.removeAll()
         cellStateCache.removeAll()
-//        var nextStates: [Position: Bool] = [:]
-//        for position in cells.keys {
-//            nextStates[position] = state(at: position)
-//        }
-//        for (position, isAlive) in nextStates {
-//            cells[position]?.isAlive = isAlive
-//        }
-        
         
         var cellsToConsider: Set<Position> = []
         for position in changedCells {

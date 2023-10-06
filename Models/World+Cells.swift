@@ -26,20 +26,6 @@ extension WorldModel {
         return count
     }
     
-    func revivingCells() -> [Cell] {
-        var candidates: Set<Position> = []
-        for aliveCell in aliveCells {
-            let neighboursPositions = getNeighbourPositions(of: aliveCell.position)
-            for neighbourPosition in neighboursPositions {
-                if let cell = cells[neighbourPosition], !cell.isAlive {
-                    candidates.insert(neighbourPosition)
-                }
-            }
-        }
-
-        return candidates.filter { aliveNeighbourCountAt($0) == 3 }.compactMap { cells[$0] }
-    }
-    
     func getNeighbourPositions(of position: Position) -> Set<Position> {
         let neighbours: Set<Position> = [
             Position(x: position.x - 1, y: position.y - 1),
@@ -58,9 +44,9 @@ extension WorldModel {
         aliveCells.filter { !(2...3 ~= aliveNeighbourCountAt($0.position)) }
     }
     
-//    func revivingCells() -> [Cell] {
-//        deadCells.filter { aliveNeighbourCountAt($0.position) == 3 }
-//    }
+    func revivingCells() -> [Cell] {
+        deadCells.filter { aliveNeighbourCountAt($0.position) == 3 }
+    }
     
     func state(at position: Position) -> Bool {
         if let cachedState = cellStateCache[position] {
